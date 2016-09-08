@@ -1,11 +1,11 @@
-== Overview
+## Overview
 Simple interface to Unihan database.
 
 This library comes both with
   - An sqlite database populated with data from the Unihan database
   - Perl/bash scripts to generate said database, should you wish to
 
-== Usage
+## Usage
 
     var cjk_unihan = require("./index.js");
 
@@ -27,7 +27,7 @@ This library comes both with
     });
 
 
-== Generating a fresh SQLite3 database
+## Generating a fresh SQLite3 database
     cd parser
 
     # parser/data should contain a file which contains all the concatenated files downloaded from
@@ -41,7 +41,7 @@ This library comes both with
 After this we should be set to go.
 Ideally I will wrap this all up in some simple package that will download the latest copy from the web and automate all this fiddling around
 
-== TODO
+## TODO
   - Tidy up database generation scripts
   - Automate download, concatenation, sorting of downloaded unihan txt files
   - Tests would be nice. Real ones and such
