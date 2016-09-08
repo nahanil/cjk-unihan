@@ -2,7 +2,7 @@
 Simple interface to Unihan database for Node.js.
 
 This library comes with:
-  - The simple to use
+  - The simple to use node.js module for query Unihan data
   - An SQLite3 database populated with data from the Unihan database
   - Perl/bash scripts to generate said database, should you wish to update it, etc
 
@@ -32,7 +32,7 @@ cjk_unihan.get("我", function(err, result){
 ````bash
 cd parser
 
-# parser/data should contain a file which contains all the concatenated files downloaded from
+# parser/data should contain a file which contains all the concatenated files downloaded from http://www.unicode.org/Public/UCD/latest/
 # This file should be sorted by the first column, otherwise shit will break.
 
 perl parse.pl < data/Unihan.sorted.txt > unihan.parsed
