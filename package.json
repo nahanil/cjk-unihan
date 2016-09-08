@@ -1,0 +1,26 @@
+{
+  "name": "cjk-unihan",
+  "version": "0.0.1a",
+  "description": "Node.js interface to Unihan database of CJK characters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chinese",
+    "中文",
+    "unihan",
+    "cjk",
+    "japanese",
+    "hanzi", "pinyin", "characters", "unicode"
+  ],
+  "author": "Jarrod Linahan <jarrod@linahan.id.au> (http://jarrod.linahan.id.au/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/texh/cjk-unihan.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "sqlite3": "^3.1.4"
+  }
+}

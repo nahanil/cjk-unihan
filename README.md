@@ -51,3 +51,9 @@ Ideally I will wrap this all up in some simple package that will download the la
   - Tidy up the format of some data stored (Should currently be a 1:1 dump of the Unihan data)
     - ie, kHanyuPinyin should probably return an array of monosyllabic pronunciations, the rest of this field can be ignored when inserting to database
     - etc etc
+
+# Danger, Will Robinson!
+It's very early days here. I'm sure there was another module that I used to use for this purpose, but I can't find it for the life of me so here this is.
+I expect the API calls to remain much the same as I work on this - it's a simple wrapper around a database to 'get' certain information, and doesn't need to do anything more.
+
+The data returned however will be tidied up, change, prodded, poked, tweaked and modified until I am happier with it. If this happens I will increment version numbers accordingly, but I thought I'd add the Buyer Beware sticker before putting this out in the world.
