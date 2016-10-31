@@ -4,8 +4,7 @@ var db = new sqlite3.Database('./data/unihan.db');
 (function(){
   var instance;
 
-  function Unihan() {
-  }
+  function Unihan() { }
 
   Unihan.prototype.get = function(key, field, callback) {
     if (!callback && typeof field == "function") {
@@ -20,15 +19,15 @@ var db = new sqlite3.Database('./data/unihan.db');
         return callback(err);
       }
 
+      // If nothing was found...
       if (!rows || !rows.length) {
         return callback();
       }
 
+      // Return all data or single field?
       var result = field ? rows[0][field] : rows[0];
       callback(null, result);
     });
-
-    return field ? "Single field" : {all: "Known data"};
   }
 
   if (!instance) {
