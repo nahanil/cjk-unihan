@@ -1,5 +1,6 @@
 var sqlite3 = require('sqlite3').verbose();
-var db = new sqlite3.Database('./data/unihan.db');
+var path = require('path');
+var db = new sqlite3.Database(path.join(__dirname, './data/unihan.db'));
 
 (function(){
   var instance;
@@ -12,20 +13,20 @@ var db = new sqlite3.Database('./data/unihan.db');
       field = null;
     }
 
-    var query = "SELECT " + (field ? field : "*") + " FROM unihan WHERE character = '"+ key +"'";
-
-    db.all(query, function(err, rows) {
+    // Lookup character in sqlite db
+    var query = "SELECT " + (field ? field : "*") + " FROM unihan WHERE character = ? limit 1";
+    db.get(query, key, function(err, row) {
       if (err) {
         return callback(err);
       }
 
       // If nothing was found...
-      if (!rows || !rows.length) {
+      if (!row) {
         return callback();
       }
 
       // Return all data or single field?
-      var result = field ? rows[0][field] : rows[0];
+      var result = field ? row[field] : row;
       callback(null, result);
     });
   }
