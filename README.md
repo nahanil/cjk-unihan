@@ -1,5 +1,5 @@
 ## Overview
-Simple interface to Unihan database for Node.js.
+Simple interface to Unihan database for Node.js. Created for use on [HanziPal](https://www.hanzipal.com)
 
 This library comes with:
   - The simple to use node.js module for query Unihan data
