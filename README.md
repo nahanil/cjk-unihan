@@ -8,7 +8,7 @@ This library comes with:
 
 ## Usage
 ````javascript
-var cjk_unihan = require("./index.js");
+var cjk_unihan = require("cjk-unihan");
 
 // Query a single field for a specified character
 cjk_unihan.get("我", "kTotalStrokes", function(err, result){
