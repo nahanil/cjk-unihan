@@ -1,4 +1,4 @@
-## Overview
+## cjk-unihan [![npm version](https://badge.fury.io/js/cjk-unihan.svg)](https://www.npmjs.com/package/cjk-unihan)
 Simple interface to Unihan database for Node.js. Created for use on [HanziPal](https://www.hanzipal.com) & available on [NPM](https://www.npmjs.com/package/cjk-unihan)
 
 This library comes with:
