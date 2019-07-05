@@ -1,6 +1,6 @@
 {
   "name": "cjk-unihan",
-  "version": "0.0.2a",
+  "version": "0.0.2",
   "description": "Node.js interface to Unihan database of CJK characters",
   "main": "index.js",
   "scripts": {
