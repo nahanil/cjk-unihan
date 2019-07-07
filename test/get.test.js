@@ -14,4 +14,11 @@ describe('get', () => {
       done()
     });
   })
+
+  it ('get cb', (done) => {
+    unihan.get("我", undefined, function(err, result){
+      expect(result.kJapaneseKun).toEqual('WARE WA')
+      done()
+    })
+  })
 })
