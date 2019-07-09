@@ -1,3 +1,4 @@
 parser
 coverage
 .gitlab-ci.yml
+dump.js
